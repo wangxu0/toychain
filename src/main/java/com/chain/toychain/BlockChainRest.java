@@ -49,13 +49,13 @@ public class BlockChainRest {
         peerToPeerNetwork.out(id);
     }
 
-    @PostMapping(value = "/broatcast/{id}")
-    public String broatcast(@PathVariable("id") String id, @RequestBody String data) {
+    @PostMapping(value = "/broadcast/{id}")
+    public String broadcast(@PathVariable("id") String id, @RequestBody String data) {
         BlockChain chainByPeer = peerToPeerNetwork.getChainByPeer(id);
         Block block = chainByPeer.assemblyNextBlock(data);
         boolean added = chainByPeer.addBlock(block);
         if (added) {
-            peerToPeerNetwork.broatcast(id, block);
+            peerToPeerNetwork.broadcast(id, block);
             return "{'status':'true'}";
         } else {
             return  "{'status':'false'}";

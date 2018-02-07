@@ -28,7 +28,7 @@ public class PeerToPeerNetwork {
         this.peers.remove(id);
     }
 
-    public void broatcast(String id, Block block) {
+    public void broadcast(String id, Block block) {
         if (id == null || block == null) {
             return;
         }
