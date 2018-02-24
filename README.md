@@ -13,7 +13,7 @@ Therefore, it will not guarantee the correctness of the code under concurrency s
 mvn clean package
 ```
 ```
-nohup java -jar ./toychain-0.0.1-SNAPSHOT.jar &amp;
+nohup java -jar ./toychain-0.0.1-SNAPSHOT.jar &
 ```
 ### Get blockchain
 ```
