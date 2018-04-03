@@ -44,3 +44,8 @@ curl -X POST --data "{transaction json data}" http://localhost:8080/toychain/bro
 curl -X POST http://localhost:8080/toychain/peer/sync/{peerId}
 ```
 
+## License
+Bloomfilter is released under the [WTFPL](http://www.wtfpl.net/about/).</br>
+You can also read it in [Wikipedia](https://en.wikipedia.org/wiki/WTFPL).</br>
+[![WTFPL](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-1.png)](http://www.wtfpl.net)
+
